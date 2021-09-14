@@ -15,3 +15,9 @@ or https://appac.github.io/mlb-data-api-docs/ (edited)
 ![back of card example](https://i.imgur.com/jRlRXIc.jpg)
 
 ![example card](https://i.imgur.com/Ux3U4ad.jpg)
+
+
+
+<!-- https://developer.sportradar.com/docs/read/images/Images_v3#player-manifests
+
+maybe try this api for the images -->
