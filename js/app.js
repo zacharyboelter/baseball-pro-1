@@ -1,11 +1,11 @@
-$('.card').click(function () {
-    $(this).toggleClass('flipped');
-});
+// $('.card').click(function () {
+//     $(this).toggleClass('flipped');
+// });
 
 let playerData, userInput;
 
 const $input = $('input[type="text"]');
-const $playerName = $('#player-name');
+const $playerName = $('.info-description');
 const $currentTeam = $('#team');
 const $positionPlayed = $('#position');
 const $handed = $('#handed');

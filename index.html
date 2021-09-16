@@ -5,64 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 
     <title>Baseball Cards</title>
 </head>
 
-<body></body>
-<h1>Baseball Cards</h1>
-<p>1950's Tops Style Baseball Cards</p>
-<!-- 
-<div class="wrapper cards">
-    <div class="container">
-        <div class="card">
-            <div class="front">
-                <h2>player name</h2>
+<body>
+    <!-- <h1>Baseball Stats</h1> -->
+
+
+    <div class="card">
+        <div class="info-left">
+            <h2 class="info-heading">Player Name:</h2>
+            <p class="info-description"> </p>
+            <a href="#" class="info-btn">New Player</a>
+        </div>
+        <div class="info-right">
+            <div class="stat-group">
+                <h5 class="stat-number">+45%</h5>
+                <span class="stat-name">Position</span>
             </div>
-            <div class="back">
-                <div class="content">
-                    <h3 class="cardTitle">player name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales, mi ac vulputate blandit,
-                        libero nulla bibendum quam.</p>
+            <div class="stat-group">
+                <h5 class="stat-number">+50%</h5>
+                <span class="stat-name">Batts/Throws</span>
+            </div>
+            <div class="stat-group">
+                <h5 class="stat-number">+29%</h5>
+                <span class="stat-name">Home Runs</span>
+            </div>
+            <div class="stat-group">
+                <h5 class="stat-number">+600%</h5>
+                <span class="stat-name">Batt Avg.</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="wrapper cards">
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div id=playerName>
+                        <h3>Player:</h3>
+                        <p id="player-name"></p>
+                    </div>
+                    <div class="team">
+                        <h4>Current Team:</h4>
+                        <p id="team"></p>
+                    </div>
+                    <div class="position">
+                        <h4>Position Played:</h4>
+                        <p id="position"></p>
+                    </div>
+                    <div class="handed">
+                        <h4>Throws/Bats:</h4>
+                        <p id="handed"></p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h3 class="cardTitle">player name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales, mi ac vulputate
+                            blandit,
+                            libero nulla bibendum quam.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
-<div id=player-name>
-    <h3>Player:</h3>
-    <p id="player-name"></p>
-</div>
-<div class="team">
-    <h4>Current Team:</h4>
-    <p id="team"></p>
-</div>
-<div class="position">
-    <h4>Position Played:</h4>
-    <p id="position"></p>
-</div>
-<div class="handed">
-    <h4>Throws/Bats:</h4>
-    <p id="handed"></p>
-</div>
-<div>
-
-</div>
-<form>
-    <input type="text" placeholder="Add Player" />
-    <input type="submit" value="Tops Card" />
-</form>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
+     -->
 
 
+    <form class="form-container">
+        <input class="form-row" type="text" placeholder="Add Player" />
+        <input type="submit" value="Stats" />
+    </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
