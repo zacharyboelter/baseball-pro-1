@@ -1,27 +1,33 @@
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* shrink the html */
 html {
-    font-size: 62.5%;
+    font-size: 62%;
+}
+header {
+
+    /* FINISH THIS TOMORROW */
 }
 
+/* content */
 body {
     width: 100%;
     height: 100vh;
-    background-color: #443878;
+    background-color: #0096c7;
     padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+/* front card styling */
 .card {
-    background-image: linear-gradient(to right, #5b4d8b 48%, #8274ab);
+    background-image: linear-gradient(to right, #00b4d8 48%, #ade8f4);
+    /* background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgb(100, 102, 214) 0%, rgba(95,209,249,1) 100.2% ); */
     color: white;
     font-family: sans-serif;
     padding: 2rem;
@@ -29,19 +35,19 @@ body {
     z-index: 0;
     cursor: pointer;
 }
-
+/* background/underneath layer */
 .card::before{
     content: "";
     width: 90%;
     height: 110%;
-    background-color: grba(87,47,149,.2);
+    background-color: rgba(87,47,149,.2);
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-
+/* 'player' */
 .info-heading {
     font-size: 3rem;
     letter-spacing: 1px;
@@ -49,25 +55,51 @@ body {
     margin-bottom: 1rem;
 }
 
+/* player name */
 .info-description {
     font-size: 1.6rem;
     margin-bottom: 4rem;
     line-height: 1.5;
 }
 
-.info-btn {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: grba(87,47,149,.2);
-    padding: 1.5rem;
-    transition: all .5s;
-}
+/* form styling */
+.form-row {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 150px;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    padding: 5px 5px;
 
-.info-button:hover{
-    box-shadow: 0 0 1.5rem rgba(0, 0,0, .4);
 }
+/* button styling */
+#submit {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+    color: white;
+    padding: 0px 5px 2px 5px;
+    outline: 0;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: white;
+  }
 
+      /* put stats into grid on right */
 .info-right {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -76,6 +108,8 @@ body {
     position: relative;
 }
 
+
+/* DRY for the following two */
 .info-right::before,
 .info-right::after{
     content: "";
@@ -84,13 +118,15 @@ body {
     top: 50%;
 }
 
-
+/* creates horizontal line */
 .info-right::before{
     width: 100%;
     height: 1px;
     transform: translateY(-50%);
 }
 
+
+/* vertical line styling */
 .info-right::after{
     width: 1px;
     height: 100%;
@@ -98,20 +134,25 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* stats div */
 .stat-group{
     padding: 2.5rem;
 }
 
+/* input info styling */
 .stat-number{
     font-size: 2.6rem;
     letter-spacing: 1px;
     margin-bottom: .6rem;
 }
 
+/* stat title styling */
 .stat-name{
     text-transform: uppercase;
 }
 
+
+/* responsive styling */
 @media screen and (min-width: 768px) {
     .card{
         max-width: 90rem;
