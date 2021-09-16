@@ -59,7 +59,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    background-color: #8274a6;
+    background-color: grba(87,47,149,.2);
     padding: 1.5rem;
     transition: all .5s;
 }
@@ -70,7 +70,7 @@ body {
 
 .info-right {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     margin-top: 5rem;
     position: relative;
@@ -94,7 +94,7 @@ body {
 .info-right::after{
     width: 1px;
     height: 100%;
-    left: 50%;
+    left: 0%;
     transform: translate(-50%, -50%);
 }
 

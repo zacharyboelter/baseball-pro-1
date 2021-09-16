@@ -12,31 +12,45 @@
 </head>
 
 <body>
-    <!-- <h1>Baseball Stats</h1> -->
+    <!-- <header><h1>Baseball Stats</h1></header> -->
+
 
 
     <div class="card">
         <div class="info-left">
-            <h2 class="info-heading">Player Name:</h2>
-            <p class="info-description"> </p>
-            <a href="#" class="info-btn">New Player</a>
+            <h3 class="info-heading">Player:</h3>
+            <p class="info-description" id="playerName"> </p>
+
+            <form class="info-btn">
+                <input class="form-row" type="text" placeholder="Add Player" />
+                <input type="submit" value="Stats" />
+            </form>
+            <!-- <a href="#" class="info-btn">New Player</a> -->
         </div>
         <div class="info-right">
             <div class="stat-group">
-                <h5 class="stat-number">+45%</h5>
+                <h5 class="stat-number" id="position">-</h5>
                 <span class="stat-name">Position</span>
             </div>
             <div class="stat-group">
-                <h5 class="stat-number">+50%</h5>
-                <span class="stat-name">Batts/Throws</span>
+                <h5 class="stat-number" id="handed">-</h5>
+                <span class="stat-name">Handed</span>
             </div>
             <div class="stat-group">
-                <h5 class="stat-number">+29%</h5>
-                <span class="stat-name">Home Runs</span>
+                <h5 class="stat-number" id="placeOfBirth">-</h5>
+                <span class="stat-name">Birth Place</span>
             </div>
             <div class="stat-group">
-                <h5 class="stat-number">+600%</h5>
-                <span class="stat-name">Batt Avg.</span>
+                <h5 class="stat-number" id="height">-</h5>
+                <span class="stat-name">Height</span>
+            </div>
+            <div class="stat-group">
+                <h5 class="stat-number" id="weight">-</h5>
+                <span class="stat-name">Weight</span>
+            </div>
+            <div class="stat-group">
+                <h5 class="stat-number" id="team">-</h5>
+                <span class="stat-name">Team</span>
             </div>
         </div>
     </div>
@@ -77,11 +91,11 @@
      -->
 
 
-    <form class="form-container">
+    <!-- <form class="info-btn">
         <input class="form-row" type="text" placeholder="Add Player" />
         <input type="submit" value="Stats" />
     </form>
-
+ -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
