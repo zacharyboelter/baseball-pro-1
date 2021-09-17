@@ -22,14 +22,15 @@ Desktop
 ![screenshot](https://i.imgur.com/vFocqgQ.png)
 
 # Getting Started
+Project link here.
 https://baseball-stats-project.netlify.app/
 
 
 # Future Enhancement(s).
-Update color palates to gradients that match the players teams colors <br>
+*Update color palates to gradients that match the players teams colors <br>
 as each player is searched for. Add team logo in corner.
 
-Find multiple APIs with team headshots, team logos, career stats <br>
+*Find multiple APIs with team headshots, team logos, career stats <br>
 (individual for hitters and pitchers), and pull relevant information <br>
 and create 1950s 'Tops' style baseball cards. 
 
