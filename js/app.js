@@ -4,6 +4,7 @@
 
 let playerData, userInput;
 
+// set all dom grabs to jquery vars
 const $input = $('input[type="text"]');
 const $playerName = $('#playerName');
 const $currentTeam = $('#team');
@@ -13,9 +14,10 @@ const $weight = $('#weight');
 const $throws = $('#throws');
 const $placeOfBirth = $('#placeOfBirth');
 
-
+//clicky clicky
 $('form').on('submit', handleGetData);
 
+//do this
 function handleGetData(event) {
     event.preventDefault();
     // calling preventDefault() on a 'submit' event will prevent a page refresh  
@@ -32,9 +34,11 @@ function handleGetData(event) {
             console.log('bad request', error);
         }
     );
+    // clear text input form to placeholder
     $('form').trigger('reset');
 }
 
+// append results from API
 function render() {
     $playerName.text(playerData.search_player_all.queryResults.row.name_display_first_last);
     $currentTeam.text(playerData.search_player_all.queryResults.row.team_abbrev);
