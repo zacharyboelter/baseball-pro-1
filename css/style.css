@@ -32,7 +32,6 @@ body {
     z-index: 0;
     cursor: pointer;
 }
-
 /* styling the stupid header */
 header {
     position: absolute;
@@ -89,10 +88,7 @@ header {
     color: white;
 
 }
-/* 
-form-row, select, textarea{
-    color: #ff0000;
-} */
+
 /* button styling */
 #submit {
     font-size: 1.6rem;
@@ -170,7 +166,6 @@ form-row, select, textarea{
 .stat-name{
     text-transform: uppercase;
 }
-
 
 /* responsive styling */
 @media screen and (min-width: 768px) {
