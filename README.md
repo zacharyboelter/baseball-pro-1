@@ -1,5 +1,5 @@
 # Baseball-Stats
-First project. Digital baseball cards with mlb API.
+First project. Baseball stats pulled from a MLB API.
 
 # Project Description
 User will be able to search by player name and receive stats of players in the current MLB season on a css styled card. 
